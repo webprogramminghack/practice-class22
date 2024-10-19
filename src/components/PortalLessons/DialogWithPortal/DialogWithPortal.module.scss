@@ -1,0 +1,61 @@
+.dialogWrapper {
+  position: absolute;
+  z-index: 10000;
+  background: rgba(32, 38, 44, 0.7);
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-content: center;
+
+  .dialog {
+    width: rem-calc(600);
+    z-index: 999;
+    border-radius: rem-calc(5);
+    overflow: hidden;
+
+    .body {
+      display: flex;
+      min-height: rem-calc(135);
+      background: #fff;
+      padding-bottom: rem-calc(30);
+
+      .levelIcon {
+        display: flex;
+        justify-content: center;
+        min-width: rem-calc(135);
+        min-height: 100%;
+
+        .icon {
+          margin-top: rem-calc(30);
+        }
+      }
+
+      .content {
+        padding-right: rem-calc(40);
+
+        .title {
+          margin-top: rem-calc(37);
+          font-size: rem-calc(19);
+          line-height: rem-calc(25);
+          font-weight: 700;
+        }
+
+        .description {
+          margin-top: rem-calc(8);
+          font-size: rem-calc(13);
+          line-height: rem-calc(21);
+          font-weight: 500;
+        }
+      }
+    }
+
+    .footer {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: rem-calc(20);
+      padding: rem-calc(18) rem-calc(30);
+      background: #f5f5f5;
+    }
+  }
+}
